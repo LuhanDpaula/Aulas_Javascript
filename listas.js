@@ -116,7 +116,7 @@ class ListaEncadeada
         //remove o primeiro
         if(indice === 0)
         {
-            this.head = atual.proximo; // coloca a cabeca aonde tá o próximo node
+            this.cabeca = atual.proximo; // coloca a cabeca aonde tá o próximo node
         }
         else
         {
@@ -162,9 +162,9 @@ LE.inserirPrimeiro(200);
 LE.inserirPrimeiro(300);
 LE.inserirUltimo(400);
 
-// LE.removerEm(3);
+LE.removerEm(0);
 
-LE.limparLista();
+
 
 LE.imprimirDados();
 
@@ -174,3 +174,8 @@ let index = leia.questionInt("qual posicao voce quer checar?: ");
 console.log(`valor da posicao ${index}: `);
 LE.chegarEm(index);
 */
+
+
+
+// na aula do tiago, vai ser #head em vez de cabeca, #length em vez de tamanho,
+// newnode em vez de noh, 
